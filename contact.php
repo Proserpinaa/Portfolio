@@ -10,8 +10,8 @@ $headers = "From: $subject <{$email}>" . PHP_EOL .
     'X-Mailer: PHP/' . phpversion();
 $headers .= 'Content-type: text/plain; charset=UTF-8; format=flowed' . "\r\n";
 $headers .= 'Content-Transfer-Encoding: 8bit'."\r\n";
-$myEmail = 'example@gmail.com';
+$myEmail = 'romenetsnadia@gmail.com';
 
 mail($myEmail, $subject, $message, $headers);
 
-echo '<div class="alert alert-success">we have received your message, thank you</div>';
+echo '<div class="alert alert-success">I have received your message, thank you!</div>';
