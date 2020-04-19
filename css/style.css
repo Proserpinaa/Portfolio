@@ -211,7 +211,7 @@ a:focus {text-decoration: none;}
 /* Start Hero */
 
 .hero {
-    background-image: url('https://github.com/Proserpinaa/Portfolio/blob/master/img/main.JPG');
+    background-image: url(../img/main.JPG);
     background-size: cover;
     background-attachment: fixed;
     display: -webkit-box;
