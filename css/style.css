@@ -211,7 +211,7 @@ a:focus {text-decoration: none;}
 /* Start Hero */
 
 .hero {
-    background-image: url(../img/main.jpg) no-repeat;
+    background-image: url('../img/main.jpg');
     background-size: cover;
     background-attachment: fixed;
     display: -webkit-box;
