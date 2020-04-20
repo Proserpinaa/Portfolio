@@ -15,3 +15,4 @@ $myEmail = 'romenetsnadia@gmail.com';
 mail($myEmail, $subject, $message, $headers);
 
 echo '<div class="alert alert-success">I have received your message, thank you!</div>';
+?>
