@@ -368,18 +368,18 @@
                 </div>
                 <div class="row">
                     <div class="box">
-                        <form action="https://formspree.io/nadiia.romenets@email.com">
+                        <form action="//formspree.io/nadiia.romenets@email.com" method="POST">
                             <div class="col-md-6">
-                                <input type="text" class="form-control name" placeholder="Name" />
+                                <input type="text" name="name" class="form-control name" placeholder="Name" />
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control email" placeholder="E-mail" />
+                                <input type="email" name="_replyto" class="form-control email" placeholder="E-mail" />
                             </div>
                             <div class="col-md-12">
-                                <input type="text" class="form-control subject" placeholder="Subject" />
-                                <textarea class="form-control message" placeholder="Your message"></textarea>
+                                <input type="text" name="_subject" class="form-control subject" placeholder="Subject" />
+                                <textarea name="message" class="form-control message" placeholder="Your message"></textarea>
                                 <input type="submit" class="btn send" value="send" />
-                                <div class="output"></div>
+                                <div name="_next" class="output"></div>
                             </div>
                         </form>
                     </div>
