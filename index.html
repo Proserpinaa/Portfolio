@@ -368,20 +368,24 @@
                 </div>
                 <div class="row">
                     <div class="box">
-                        <form action="contact.php">
+                        <form id="contactform" method="POST">
                             <div class="col-md-6">
-                                <input type="text" class="form-control name" placeholder="Name" />
+                                <input type="text" class="form-control name" name="name" placeholder="Name" />
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control email" placeholder="E-mail" />
+                                <input type="email" class="form-control email" name="_replyto" placeholder="E-mail" />
                             </div>
                             <div class="col-md-12">
-                                <input type="text" class="form-control subject" placeholder="Subject" />
-                                <textarea class="form-control message" placeholder="Your message"></textarea>
-                                <input type="submit" class="btn send" value="send" />
-                                <div class="output"></div>
+                                <input type="text" class="form-control subject" name="_subject" placeholder="Subject" />
+                                <textarea class="form-control message" name="message" placeholder="Your message"></textarea>
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <input type="submit" class="btn send" value="Send" />
                             </div>
                         </form>
+                        <script>
+                            var contactform =  document.getElementById('contactform');
+                            contactform.setAttribute('action', '//formspree.io/' + 'nadiia.romenets' + '@' + 'gmail' + '.' + 'com');
+                        </script>
                     </div>
                 </div>
             </div>
