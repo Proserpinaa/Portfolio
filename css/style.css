@@ -639,7 +639,7 @@ footer p a:focus {font-weight: bold;}
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
     .hero {
       background-image: url(../img/main2.jpg);
     }
