@@ -628,13 +628,6 @@ footer p a:focus {font-weight: bold;}
     
 }
 
-@media only screen and (max-width: 620px) {
-    .hero {
-      background-image: url(../img/main2.jpg);
-    }
-}
-
-
 /* End Media */ 
 
 /* Start Animation */
