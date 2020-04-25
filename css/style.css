@@ -627,6 +627,24 @@ footer p a:focus {font-weight: bold;}
     .about .box h2 {margin-top: 20px;}
     
 }
+@media only screen and (max-width: 1024px) {
+    .hero {
+      background-image: url(../img/main3.jpg);
+    }
+}
+
+@media only screen and (max-width: 677px) {
+    .hero {
+      background-image: url(../img/main1.jpg);
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hero {
+      background-image: url(../img/main2.jpg);
+    }
+}
+
 
 /* End Media */ 
 
