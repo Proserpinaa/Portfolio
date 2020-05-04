@@ -146,45 +146,45 @@ $(function () {
     
     // Contact Form
 
-    send.on("click", function () {
+    // send.on("click", function () {
     
-        var name    = $(".name").val(),
-            email   = $(".email").val(),
-            subject = $(".subject").val(),
-            message = $(".message").val(),
-            dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
+    //     var name    = $(".name").val(),
+    //         email   = $(".email").val(),
+    //         subject = $(".subject").val(),
+    //         message = $(".message").val(),
+    //         dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&message=' + message;
         
-        function validateEmail(emailadd) {
-            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(emailadd);
-        }
+    //     function validateEmail(emailadd) {
+    //         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    //         return re.test(emailadd);
+    //     }
         
-        if (name === '' || email === '' || subject === '' || message === '') {
+    //     if (name === '' || email === '' || subject === '' || message === '') {
         
-            output.html("<div class='alert alert-warning'>please fill all fields.</div>").fadeIn().delay(3000).fadeOut();
+    //         output.html("<div class='alert alert-warning'>please fill all fields.</div>").fadeIn().delay(3000).fadeOut();
         
-        } else if (!validateEmail(email)) {
+    //     } else if (!validateEmail(email)) {
         
-            output.html("<div class='alert alert-warning'>write a valid email.</div>").fadeIn().delay(3000).fadeOut();
+    //         output.html("<div class='alert alert-warning'>write a valid email.</div>").fadeIn().delay(3000).fadeOut();
             
-        } else {
+    //     } else {
         
-            $.ajax({
-                url: "contact.php",
-                type: "POST",
-                data: dataString,
-                cache: false,
-                success: function(result) {
-                    output.html(result).fadeIn().delay(3000).fadeOut();
-                    var name = $(".name").val(''),
-                    email    = $(".email").val(''),
-                    subject  = $(".subject").val(''),
-                    message  = $(".message").val('');
-                }
-            });
-        }
-        return false;
-    });
+    //         $.ajax({
+    //             url: "contact.php",
+    //             type: "POST",
+    //             data: dataString,
+    //             cache: false,
+    //             success: function(result) {
+    //                 output.html(result).fadeIn().delay(3000).fadeOut();
+    //                 var name = $(".name").val(''),
+    //                 email    = $(".email").val(''),
+    //                 subject  = $(".subject").val(''),
+    //                 message  = $(".message").val('');
+    //             }
+    //         });
+    //     }
+    //     return false;
+    // });
        
     // Triger Wow
     

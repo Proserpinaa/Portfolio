@@ -369,12 +369,18 @@
                 <div class="row">
                     <div class="box">
                         <form action="https://formspree.io/xjvabeda" method="POST">
-                            <input type="text" class="form-control name col-md-6" name="name" placeholder="Name" />
-                            <input type="email" class="form-control email col-md-6" name="_replyto" placeholder="E-mail" />
-                            <input type="text" class="form-control subject col-md-12" name="_subject" placeholder="Subject" />
-                            <textarea class="form-control message col-md-12" name="message" placeholder="Your message"></textarea>
-                            <input type="text" name="_gotcha" style="display:none" />
-                            <input type="submit" class="btn send" value="Send" />
+                            <div class="col-md-6">
+                                <input type="text" class="form-control name col-md-6" name="name" placeholder="Name" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control email col-md-6" name="_replyto" placeholder="E-mail" />
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control subject col-md-12" name="_subject" placeholder="Subject" />
+                                <textarea class="form-control message col-md-12" name="message" placeholder="Your message"></textarea>
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <input type="submit" class="btn send" value="Send" />
+                            </div>
                         </form>
                     </div>
                 </div>
