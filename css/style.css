@@ -211,7 +211,7 @@ a:focus {text-decoration: none;}
 /* Start Hero */
 
 .hero {
-    background-image: url(../img/main.JPG);
+    background-image: url(../img/dogs.JPG);
     background-size: cover;
     background-attachment: fixed;
     display: -webkit-box;
