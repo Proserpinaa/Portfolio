@@ -214,12 +214,8 @@ a:focus {text-decoration: none;}
     background-image: url(../img/dogs.JPG);
     background-size: cover;
     background-attachment: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -241,7 +237,7 @@ a:focus {text-decoration: none;}
 
 .hero .box h1 {
     font-weight: bold;
-    color: rgb(78, 155, 58);
+    color: rgb(100, 204, 74);
 }
 
 [data-theme-name="particles"] #hero #particles-js {
