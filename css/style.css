@@ -634,6 +634,10 @@ footer p a:focus {font-weight: bold;}
     
     .hero {
         background-image: url(../img/main2.JPG);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
